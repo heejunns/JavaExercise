@@ -2,7 +2,9 @@ package javaexercise;
 
 class Mymath {
 
-    long add(long a,long b){ // 두 값을 받아서 두 값을 더한 값을 반환하는 메서드
+    int x;
+
+    static long add(long a, long b){ // 두 값을 받아서 두 값을 더한 값을 반환하는 메서드
         long result = a+b;
         return result;
     }
