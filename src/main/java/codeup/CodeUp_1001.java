@@ -5,3 +5,4 @@ public class CodeUp_1001 {
         System.out.println("Hello");
     }
 }
+
