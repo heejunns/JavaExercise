@@ -20,8 +20,11 @@ class JavaExercise_54 {
         Value v1 = new Value(20);
         Value v2 = new Value(20);
 
-        System.out.println(v1.equals(v2));
-
+        if (v1.equals(v2)) {
+            System.out.println("v1과 v2의 value 값이 같습니다.");
+        } else {
+            System.out.println("v1과 v2의 value 값이 다릅니다.");
+        }
     }
 }
 
