@@ -28,9 +28,9 @@ class Card{
         return this.kind.equals(c.kind) && this.num == c.num;
     }
     @Override
-     public int hashCode(){ // equals() 를 오버라이딩 해줬기 때문에 hashCode()도 오버라이딩 해줘야 합니다.
-         return Objects.hash(kind,num); // Objects클래스는 객체와 관련된 융용한 메서드를 제공한다.
-    }
+    public int hashCode(){ // equals() 를 오버라이딩 해줬기 때문에 hashCode()도 오버라이딩 해줘야 합니다.
+           return Objects.hash(kind,num); // Objects클래스는 객체와 관련된 융용한 메서드를 제공한다.
+   }
 
 
 }
