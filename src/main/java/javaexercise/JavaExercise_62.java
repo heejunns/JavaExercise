@@ -38,7 +38,7 @@ class JavaExercise_62 {
         System.out.println(list);
         //System.out.println("list2 에서 list1와 겹치는 부분을 삭제 : "+list2.removeAll(list));  // true 반환
         // 위의 removeAll 메서드와 같은 기능을 for문으로 만들어보기
-        //for (int i = 0; i < list2.size(); ++i){ i를 0부터 시작하면 list2의 요소를 삭제하면서 list2의 요소들의 위치가 움직여서 우리가 원하는 결과를 얻을 수 없음
+        //for (int i = 0; i < list2.size(); ++i){ i를 0부터 시작하면 list2의 요소를 삭제하면서 list2의 요소들이 빈공간을 채우기 위해 위치가 움직여서 우리가 원하는 결과를 얻을 수 없음
         for (int i = list2.size()-1; i>=0; --i){ // 가장 오른쪽부터 for 문을 수행에 list2의 요소들을 삭제하면 요소를 삭제하더라도 list2의 요소들의 위치가 움직이지 않기 때문에 원하는 결과를 얻을 수 있음
             if (list.contains(list2.get(i))){
                 list2.remove(i);
