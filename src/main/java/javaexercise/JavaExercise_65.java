@@ -4,7 +4,7 @@ import java.util.Stack;
 
 class JavaExercise_65 {
 
-    public static void main(String[] args) { // 입력된 수식의 괄호가 올바르게 체크 되어 있는지 확인해주는 프로그램
+    public static void main(String[] args) { // 입력된 수식의 괄호가 올바르게 체크 되어 있는지 확인해주는 프로그램 (stack 사용)
         Stack stack = new Stack();
 
         String str = "2+3)*5";
