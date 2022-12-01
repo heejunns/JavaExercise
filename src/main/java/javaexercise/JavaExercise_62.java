@@ -1,13 +1,15 @@
 package javaexercise;
 
+import java.security.cert.CollectionCertStoreParameters;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Collections;
 
 class JavaExercise_62 {
     public static void main(String[] args) { // ArrayList 메서드
 
         ArrayList list = new ArrayList();
-        list.add(1);
+        list.add(1);  // list.add(new Integer(1))이어야 하는데 그냥 1로 가능한 이유는 autoboxing에 의해서 기본형이 참조형으로 자동 변환 되기 때문이다.
         list.add(2);
         list.add(3);
         list.add(4);
@@ -18,10 +20,13 @@ class JavaExercise_62 {
         list.add(9);
         list.add(10);
         list.add(11);
-
-        ArrayList list2 = new ArrayList(list.subList(0,6));
+        //   ArrayList(collection c)
+        ArrayList list2 = new ArrayList(list.subList(0,6)); // list.subList(int start, int end) 읽기만 할거면 생성해줄 필요없이 단독적으로 사용 가능
         System.out.println(list);
         System.out.println(list2);
+
+        Collections.sort(list); // Collections 클래스
+        Collections.sort(list2);
 
         System.out.println("list2가 list에 포함되는지? "+list.contains(list2)); // false를 반환,  list2는 object 상속이 아님, contains는 object 상속인 매개변수가 입력되어야 한다.
         System.out.println("lust2의 요소인 10이 list에 포함되는지? "+list.contains(list2.get(0))); // get 메서드로 객체를 불러와 입력 매개변수로 입력해주면 true반환
@@ -41,7 +46,8 @@ class JavaExercise_62 {
         //for (int i = 0; i < list2.size(); ++i){ i를 0부터 시작하면 list2의 요소를 삭제하면서 list2의 요소들이 빈공간을 채우기 위해 위치가 움직여서 우리가 원하는 결과를 얻을 수 없음
         for (int i = list2.size()-1; i>=0; --i){ // 가장 오른쪽부터 for 문을 수행에 list2의 요소들을 삭제하면 요소를 삭제하더라도 list2의 요소들의 위치가 움직이지 않기 때문에 원하는 결과를 얻을 수 있음
             if (list.contains(list2.get(i))){
-                list2.remove(i);
+                list2.remove(i); // remove 메서드에 그냥 정수를 입력하면 그 숫자 위치의 요소를 삭제, 만약 그 값을 삭제하고 싶다면 new 를 사용해 객체를 넣어줘야한다.
+
             }
         }
         System.out.println(list2);
