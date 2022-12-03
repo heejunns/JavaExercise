@@ -29,7 +29,7 @@ class Hello{
 }
 
 class JavaExercise_71 {
-    public static void main(String[] args) { // HashSet 클래스 3
+    public static void main(String[] args) { // HashSet 클래스 3 ( Hello 클래스 만들어 객체를 HashSet에 저장할 때 equals(), hasHCode() 오버라이딩)
         HashSet set = new HashSet();
 
         set.add("a");
