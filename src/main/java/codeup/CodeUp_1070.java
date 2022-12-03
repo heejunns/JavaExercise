@@ -14,6 +14,7 @@ public class CodeUp_1070 {
             System.out.println("summer");
         } else if (n>8 && n<12){
             System.out.println("fall");
+
         }
     }
 }
