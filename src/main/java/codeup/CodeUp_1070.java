@@ -15,8 +15,6 @@ public class CodeUp_1070 {
         } else if (n>8 && n<12){
             System.out.println("fall");
         }
-
-
     }
 }
 
