@@ -19,7 +19,7 @@ class Exercise14Thread extends Thread {
 class JavaExercise_98 {
     static long startTime = 0;
 
-    public static void main(String[] args) { // join()
+    public static void main(String[] args) { // join() 사용해보기
         Exercise13Thread exercise13Thread = new Exercise13Thread();
         Exercise14Thread exercise14Thread = new Exercise14Thread();
 
